@@ -26,7 +26,18 @@ The regex we will be using is:
 
 ### Anchors
 
+These are the characters `^` and `$`. They are used to match the beginning and end of a string. In this case, we are using them to match the beginning and end of the email address.
+
+- The `^` character is used to match the beginning of the string. This means that the regex will only match if the email address begins with the characters that follow the `^` character.
+- The `$` character is used to match the end of the string. This means that the regex will only match if the email address ends with the characters that precede the `$` character.
+- The `^` and `$` characters are used together to match the entire string. This means that the regex will only match if the email address is exactly the same as the characters that follow the `^` character and precede the `$` character.
+
 ### Quantifiers
+Quantifiers are used to match a certain number of characters.
+
+In our regex, these are the characters `+` and `{}`. They are used to match a certain number of characters.
+- The `+` character is used to match one or more of the preceding character. In this case, we are using it to match one or more of the characters `a-z`, `0-9`, `_`, `.`, and `-`.
+- The `{}` character is used to match a specific number of the preceding character. In this case, we are using it to match two or six of the characters `a-z` and `.`.
 
 ### Grouping Constructs
 
