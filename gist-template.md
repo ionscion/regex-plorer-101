@@ -40,10 +40,30 @@ In our regex, these are the characters `+` and `{}`. They are used to match a ce
 - The `{}` character is used to match a specific number of the preceding character. In this case, we are using it to match two or six of the characters `a-z` and `.`.
 
 ### Grouping Constructs
+Grouping constructs are used to group characters together that match a specific pattern specified by the regex author. 
+
+There are 3 grouping constructs present in this regex:
+- `()` is used to group characters together that match a specific pattern specified by the regex author. In this case, we are using it to group the characters that match the bracket expression `[a-z0-9_\.-]+`.
+- `()` is used to group characters together that match a specific pattern specified by the regex author. In this case, we are using it to group the characters that match the bracket expression `[\da-z\.-]+`.
+- `()` is used to group characters together that match a specific pattern specified by the regex author. In this case, we are using it to group the characters that match the bracket expression `[a-z\.]{2,6}`.
 
 ### Bracket Expressions
+Bracket expressions are used to group characters together that match a specific pattern specified by the regex author. 
+
+There are 3 brackets expressions present in this regex:
+- `[a-z0-9_\.-]` is used to match one or more of the characters `a-z`, `0-9`, `_`, `.`, and `-`. This is used to match the local part of the email address.
+- `[\da-z\.-]` is used to match one or more of the characters `a-z`, `0-9`, and `-`. This is used to match the domain name of the email address.
+- `[a-z\.]` is used to match two or six of the characters `a-z` and `.`. This is used to match the top-level domain of the email address.
 
 ### Character Classes
+There are 5 character classes present in this regex:
+
+- `\d` is used to match any digit character. This is used to match the digits in the domain name of the email address.
+- `a-z` is used to match any lowercase letter character. This is used to match the lowercase letters in the local part and domain name of the email address (i.e. it is making sure that the email address is all lowercase).
+- `0-9` is used to match any digit character. This is used to match the digits in the local part of the email address if any are present.
+- `_` is used to match the underscore character. This is used to match the underscore character in the local part of the email address.
+- `-` is used to match the hyphen character. This is used to match the hyphen character in the local part and domain name of the email address.
+- `.` is used to match the period character. This is used to match the period character in the local part and domain name of the email address.
 
 ### The OR Operator
 
