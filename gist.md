@@ -1,12 +1,10 @@
-# Regex Email Verification Explanation
-
-In this tutorial, we will be explaining the regex used to verify an email address. 
+# Regex Email Verification 
 
 ## Summary
 
 We will be explaining the regex used to verify an email address. This regex is valuable because it can be used to verify that an email address is valid before sending an email to it. This is important because it can prevent the user from entering an invalid email address and having the email bounce back.
 
-The regex we will be using is:
+The regex we will be studying here is:
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
@@ -66,10 +64,18 @@ There are 5 character classes present in this regex:
 - `.` is used to match the period character. This is used to match the period character in the local part and domain name of the email address.
 
 ### The OR Operator
+There is not an explicitly defined OR operator in this regex. 
 
 ### Flags
+There are no flags present in this regex.
 
 ### Character Escapes
+In a regex, a character escape is used to match a designated character for that specific regex use case.
+
+There are 3 character escapes present in this regex:
+- `\.` is used to match the period character in the submission. This is used to match the period character in the domain name of the email address.
+- `\d` is used to match any digit character in the submission. This is used to match the digits in the domain name of the email address.
+- `\-` is used to match the hyphen character in the submission. This is used to match the hyphen character in the domain name of the email address.
 
 ## Author
 
